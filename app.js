@@ -7,10 +7,13 @@ const game = () => {
         const playBtn = document.querySelector('.intro button');
         const introscreen = document.querySelector('.intro');
         const match = document.querySelector('.match');
+        const score = document.querySelector('.score');
 
         playBtn.addEventListener('click', () => {
             introscreen.classList.add('fadeOut');
-            match.classList.add('fadeIn')
+            match.classList.add('fadeIn');
+            score.classList.add('fadeIn');
+
         });
     };
     //play match
@@ -18,13 +21,15 @@ const game = () => {
         const options = document.querySelectorAll('.options button');
         const playerHand = document.querySelector('.player-hand');
         const computerHand = document.querySelector('.computer-hand');
-        const hands = document.querySelectorAll('.hands img')
+        const hands = document.querySelectorAll('.hands img');
 
         hands.forEach(hand => {
             hand.addEventListener('animationend', function () {
                 this.style.animation = '';
             });
         });
+
+
         //computer option
         const computerOptions = ['rock', 'paper', 'scissors'];
 

@@ -16,15 +16,23 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    opacity: 0;
+    transition:opacity 0.5s ease 0.5s;
+      
+    
 }
 .score h2 {
     font-size: 30px;
+    
+    
 
 }
 .score p{
     text-align: center;
     padding: 10px;
     font-size: 25;
+    
+    
 }
 .intro{
     color: rgb(224,224,244);
@@ -38,6 +46,7 @@ section{
 }
 .inro h1{
     font-size: 50px;
+
 }
 .intro button,
 .match button{
@@ -58,6 +67,7 @@ section{
     left: 50%;
     transform: translate(-50%,-50%);
     transition:opacity 0.5s ease 0.5s;
+   
 }
 .winner{
     color: rgb(224,224,244);  
@@ -70,6 +80,13 @@ section{
     justify-content: space-around;
     align-items: center;
 
+}
+.back{
+    position: relative;
+    transform: translateY(50%);
+     text-align: center;
+   
+   
 }
 .player-hand{
     transform: rotateY(180deg);
